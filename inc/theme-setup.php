@@ -36,7 +36,10 @@ function acstarter_setup() {
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
-    'primary' => esc_html__( 'Primary', 'acstarter' ),
+    'smat' => esc_html__( 'SMAT', 'acstarter' ),
+    'healthcare-preparedness' => esc_html__( 'Healthcare-preparedness', 'acstarter' ),
+    'public-health' => esc_html__( 'Public Health', 'acstarter' ),
+    'emergency-management' => esc_html__( 'Emergency Management', 'acstarter' ),
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
   ) );
 
