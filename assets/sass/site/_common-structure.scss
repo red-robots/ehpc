@@ -1,12 +1,6 @@
 .cap {
 	max-width: 1500px;
-	padding-right: 20px !important;
-	padding-left: 20px !important;
 	margin: 0 auto;
-	@media screen and (min-width: $midwidth){
-		padding-right: 13% !important;
-		padding-left: 13% !important;
-	}
 }
 .clear-bottom {
 	&:after {
@@ -83,5 +77,100 @@
 				margin: 0;
 			}
 	  }
+	}
+}
+#colophon {
+	color: white;
+	background-color: $color__ehpc-dark-red;
+	.copy {
+		color: white;
+	}
+	>.cap.wrapper {
+		padding: 20px;
+		@media screen and (min-width: $tabwidth){
+			padding: 5% 3.5% 3.5% 3.5%;
+		}
+		>.row-1 {
+			@media screen and (min-width: $tabwidth){
+				@include flexbox();
+				@include flexbox-justify(space-between);
+				@include flexbox-align-items(flex-start);
+				@include flexbox-align-content(flex-start);
+			}
+			>.col-1 {
+				@media screen and (min-width: $tabwidth){
+					margin: 0 20px 0 0;
+					max-width: 40%;
+				}
+				header {
+					h2 {
+						font-size: 35px;
+						font-weight: 500;
+						margin: 0;
+					}
+				}
+				.copy {
+					font-size: 25px;
+				}
+				.social {
+					margin: 20px 0 0 0;
+					a {
+						color: white;
+						&:nth-child(2){
+							margin: 0 30px;
+						}
+						i {
+							font-size: 40px;
+						}
+					}
+				}
+			}
+			>.col-2 {
+				margin: 20px 0 0 0;
+				font-size: 35px;
+				@media screen and (min-width: $tabwidth){
+					margin: 0 40px 0 20px;
+					max-width: 40%;
+				}
+			}
+		}
+		>.row-2 {
+			margin: 40px 0 0 0;
+			@media screen and (min-width: $tabwidth){
+				margin: 10% 0 0 0;
+				@include flexbox();
+				@include flexbox-justify(space-between);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+			}
+			>.col-1, >.col-2, >.col-3, >.col-4 {
+				margin: 20px 0 0 0;
+				border-top: 1px solid white;
+				padding: 10px 0 0 0;
+				@media screen and (min-width: $tabwidth){
+					width: 25%;
+					border-top: none;
+					border-left: 1px solid white;
+					padding: 0 8% 0 10px;
+				}
+				header {
+					h3 {
+						margin: 0;
+						font-weight: 500;
+					}
+				}
+				.copy {
+					padding: 10px 0 15px 0;
+
+				}
+			}
+		}
+		>.row-3 {
+			text-align: center;
+			margin: 40px 0 0 0;
+			@media screen and (min-width: $tabwidth){
+				margin: 7% 0 0 0;
+			}
+		}
 	}
 }

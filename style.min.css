@@ -1233,7 +1233,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#404040;font-family:arial,sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -1366,9 +1366,8 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-.cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
-@media screen and (min-width:900px){.cap{padding-right:13% !important;padding-left:13% !important}
-}.clear-bottom:after{clear:both;content:"";display:block}
+.cap{max-width:1500px;margin:0 auto}
+.clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:14px;color:#404040}
 @media screen and (min-width:600px){.copy{font-size:16px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
@@ -1387,7 +1386,29 @@ html[xmlns] .flexslider .slides{display:block}
 .copy>ul li a,.copy>ol li a{cursor:pointer}
 .copy>ul li a:hover,.copy>ol li a:hover{color:#404040}
 .copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+#colophon{color:white;background-color:#8b0601}
+#colophon .copy{color:white}
+#colophon>.cap.wrapper{padding:20px}
+@media screen and (min-width:600px){#colophon>.cap.wrapper{padding:5% 3.5% 3.5% 3.5%}
+}@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}
+}@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1{margin:0 20px 0 0;max-width:40%}
+}#colophon>.cap.wrapper>.row-1>.col-1 header h2{font-size:35px;font-weight:500;margin:0}
+#colophon>.cap.wrapper>.row-1>.col-1 .copy{font-size:25px}
+#colophon>.cap.wrapper>.row-1>.col-1 .social{margin:20px 0 0 0}
+#colophon>.cap.wrapper>.row-1>.col-1 .social a{color:white}
+#colophon>.cap.wrapper>.row-1>.col-1 .social a:nth-child(2){margin:0 30px}
+#colophon>.cap.wrapper>.row-1>.col-1 .social a i{font-size:40px}
+#colophon>.cap.wrapper>.row-1>.col-2{margin:20px 0 0 0;font-size:35px}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-2{margin:0 40px 0 20px;max-width:40%}
+}#colophon>.cap.wrapper>.row-2{margin:40px 0 0 0}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-2{margin:10% 0 0 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}
+}#colophon>.cap.wrapper>.row-2>.col-1,#colophon>.cap.wrapper>.row-2>.col-2,#colophon>.cap.wrapper>.row-2>.col-3,#colophon>.cap.wrapper>.row-2>.col-4{margin:20px 0 0 0;border-top:1px solid white;padding:10px 0 0 0}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-2>.col-1,#colophon>.cap.wrapper>.row-2>.col-2,#colophon>.cap.wrapper>.row-2>.col-3,#colophon>.cap.wrapper>.row-2>.col-4{width:25%;border-top:0;border-left:1px solid white;padding:0 8% 0 10px}
+}#colophon>.cap.wrapper>.row-2>.col-1 header h3,#colophon>.cap.wrapper>.row-2>.col-2 header h3,#colophon>.cap.wrapper>.row-2>.col-3 header h3,#colophon>.cap.wrapper>.row-2>.col-4 header h3{margin:0;font-weight:500}
+#colophon>.cap.wrapper>.row-2>.col-1 .copy,#colophon>.cap.wrapper>.row-2>.col-2 .copy,#colophon>.cap.wrapper>.row-2>.col-3 .copy,#colophon>.cap.wrapper>.row-2>.col-4 .copy{padding:10px 0 15px 0}
+#colophon>.cap.wrapper>.row-3{text-align:center;margin:40px 0 0 0}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-3{margin:7% 0 0 0}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
