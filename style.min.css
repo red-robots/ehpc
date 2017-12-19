@@ -1391,15 +1391,20 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.cap.wrapper{padding:20px}
 @media screen and (min-width:600px){#colophon>.cap.wrapper{padding:5% 3.5% 3.5% 3.5%}
 }@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}
-}@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1{margin:0 20px 0 0;max-width:40%}
-}#colophon>.cap.wrapper>.row-1>.col-1 header h2{font-size:35px;font-weight:500;margin:0}
-#colophon>.cap.wrapper>.row-1>.col-1 .copy{font-size:25px}
-#colophon>.cap.wrapper>.row-1>.col-1 .social{margin:20px 0 0 0}
+}@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1{margin:0;max-width:40%}
+}@media screen and (min-width:900px){#colophon>.cap.wrapper>.row-1>.col-1{margin:0 20px 0 0}
+}#colophon>.cap.wrapper>.row-1>.col-1 header h2{font-weight:500;font-size:25px;margin:0}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1 header h2{font-size:35px}
+}#colophon>.cap.wrapper>.row-1>.col-1 .copy{font-size:20px}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1 .copy{font-size:25px}
+}#colophon>.cap.wrapper>.row-1>.col-1 .social{margin:20px 0 0 0}
 #colophon>.cap.wrapper>.row-1>.col-1 .social a{color:white}
 #colophon>.cap.wrapper>.row-1>.col-1 .social a:nth-child(2){margin:0 30px}
 #colophon>.cap.wrapper>.row-1>.col-1 .social a i{font-size:40px}
-#colophon>.cap.wrapper>.row-1>.col-2{margin:20px 0 0 0;font-size:35px}
-@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-2{margin:0 40px 0 20px;max-width:40%}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-1 .social a i{font-size:30px}
+}#colophon>.cap.wrapper>.row-1>.col-2{margin:20px 0 0 0;font-size:25px}
+@media screen and (min-width:600px){#colophon>.cap.wrapper>.row-1>.col-2{margin:0;font-size:35px;max-width:40%}
+}@media screen and (min-width:900px){#colophon>.cap.wrapper>.row-1>.col-2{margin:0 40px 0 20px}
 }#colophon>.cap.wrapper>.row-2{margin:40px 0 0 0}
 @media screen and (min-width:600px){#colophon>.cap.wrapper>.row-2{margin:10% 0 0 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}
 }#colophon>.cap.wrapper>.row-2>.col-1,#colophon>.cap.wrapper>.row-2>.col-2,#colophon>.cap.wrapper>.row-2>.col-3,#colophon>.cap.wrapper>.row-2>.col-4{margin:20px 0 0 0;border-top:1px solid white;padding:10px 0 0 0}

@@ -64,6 +64,23 @@
 						wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
 						break;
 				endswitch;?>
+				<?php $ancestors = get_post_ancestors( get_the_ID() );
+				if($ancestors&&!empty($ancestors)):
+					switch(array_pop($ancestors)):
+						case 6:
+							wp_nav_menu( array( 'theme_location' => 'smat' ) ); 
+							break;
+						case 10:
+							wp_nav_menu( array( 'theme_location' => 'public-health' ) ); 
+							break;
+						case 8:
+							wp_nav_menu( array( 'theme_location' => 'healthcare-preparedness' ) ); 
+							break;
+						case 12:
+							wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
+							break;
+					endswitch;
+				endif;?>
 			</nav><!-- #site-navigation -->
 		</div><!--.row-2-->
 	</header><!-- #masthead -->
