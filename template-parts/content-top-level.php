@@ -115,25 +115,27 @@
     <section class="row-6">
         <div class="wrapper cap">
             <?php for($i=1;$i<4;$i++):?>
-                <?php $image = get_field("row_6_col_{$i}_image");
-                $button_link = get_field("row_6_col_{$i}_button_link");
-                $button_text = get_field("row_6_col_{$i}_button_text");
-                $copy = get_field("row_6_col_{$i}_copy");?>
-                <?php if($image):?>
-                    <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-                <?php endif;?>
-                <?php if($copy):?>
-                    <div class="copy">
-                        <?php echo $copy;?>
-                    </div><!--.copy-->
-                <?php endif;
-                if($button_link&&$button_text):?>
-                    <button>
-                        <a href="<?php echo $button_link;?>">
-                            <?php echo $button_text;?>
-                        </a>
-                    </button>
-                <?php endif;?>
+                <div class="col">
+                    <?php $image = get_field("row_6_col_{$i}_image");
+                    $button_link = get_field("row_6_col_{$i}_button_link");
+                    $button_text = get_field("row_6_col_{$i}_button_text");
+                    $copy = get_field("row_6_col_{$i}_copy");?>
+                    <?php if($image):?>
+                        <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+                    <?php endif;?>
+                    <?php if($copy):?>
+                        <div class="copy">
+                            <?php echo $copy;?>
+                        </div><!--.copy-->
+                    <?php endif;
+                    if($button_link&&$button_text):?>
+                        <button>
+                            <a href="<?php echo $button_link;?>">
+                                <?php echo $button_text;?>
+                            </a>
+                        </button>
+                    <?php endif;?>
+                </div><!--.col-->
             <?php endfor;?>
         </div><!--.wrapper.cap-->
     </section><!--.row-6-->

@@ -103,6 +103,9 @@
 			}
 			>.col-1 {
 				text-align: center;
+				@media screen and (min-width: $tabwidth){
+					margin: 0 20px 0 0;
+				}
 				img {
 					display: inline-block;
 					width: 30px;
@@ -112,21 +115,27 @@
 				ul {
 					margin: 5px 0 0 0;
 					padding: 0;
+					text-align: center;
 					@media screen and (min-width: $tabwidth){
 						margin: 0;
+					}
+					@media screen and (min-width: $deskwidth){
+						text-align: left;
 					}
 					li {
 						text-align: center;
 						display: block;
 						list-style-type: none;
 						@media screen and (min-width: $tabwidth){
-							border-left: 1px solid $color__ehpc-grey;
 							display: inline-block;
 							&:last-child {
 								a {
 									padding-right: 0;
 								}
 							}
+						}
+						@media screen and (min-width: $deskwidth){
+							border-left: 1px solid $color__ehpc-grey;
 						}
 						a {
 							display: block;
