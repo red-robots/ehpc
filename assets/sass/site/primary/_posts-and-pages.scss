@@ -71,3 +71,173 @@
         }
     }
 }
+.template-top-level {
+    >.row-1 {
+        position: relative;
+        .red-box {
+            width: 20%;
+            top: 0;
+            left: 0;
+            background-color: $color__ehpc-red;
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+        }
+        .image {
+            background-position: center;
+            background-size: cover;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            height: 100%;
+            z-index: -1;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20%;
+                height: 100%;
+                background: $color__ehpc-red; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(left, $color__ehpc-red ,transparent ); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(right, $color__ehpc-red, transparent); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(right, $color__ehpc-red, transparent); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(to right, $color__ehpc-red, transparent); /* Standard syntax */
+            }
+        }
+        >.wrapper.cap {
+            >.wrapper {
+                padding: 20px 0 40px 0;
+                @media screen and (min-width: $tabwidth){
+                    padding: 7% 0 12% 0;
+                    width: 40%;
+                }
+                header {
+                    h1 {
+                        margin: 0;
+                        color: white;
+                        font-size: 25px;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 45px;
+                        }
+                    }
+                }
+                .copy {
+                    margin: 15px 0 0 0;
+                    color: white;
+                    font-size: 16px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
+                }
+                button {
+                    margin: 20px 0 0 0;
+                    border: 3px solid $color__ehpc-button-grey;
+                    border-radius: 900px;
+                    box-shadow: none;
+                    text-shadow: none;
+                    background-color: white;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 13% 0 0 0;
+                    }
+                    a {
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        display: block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: $color__ehpc-button-grey;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+                        .red {
+                            color: $color__ehpc-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.row-2 {
+        >.wrapper.cap {
+            >.col-1 {
+                header {
+                    h2 {
+
+                    }
+                }
+                .copy {
+
+                }
+            }
+            >.col-2 {
+
+            }
+        }
+    }
+    >.row-3 {
+        >.wrapper.cap {
+
+        }
+    }
+    >.row-4 {
+        .red-box {
+
+        }
+        .image {
+            .overlay {
+
+            }
+        }
+        >.wrapper.cap {
+            header {
+                h2 {
+
+                }
+            }
+            .copy {
+
+            }
+            button {
+                a {
+
+                }
+            }
+        }
+    }
+    >.row-5 {
+        >.wrapper.cap {
+            header {
+                h2 {
+
+                }
+            }
+            .copy {
+
+            }
+            button {
+                a {
+
+                }
+            }
+        }
+    }
+    >.row-6 {
+        >.wrapper.cap {
+            .col {
+                img {
+
+                }
+                .copy {
+
+                }
+                button {
+                    a {
+
+                    }
+                }
+            }
+        }
+    }
+}

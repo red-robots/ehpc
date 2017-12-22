@@ -19,22 +19,28 @@
             </div><!--.overlay-->
         </div><!--.image-->
         <div class="wrapper cap">
-            <?php $row_1_button_link = get_field("row_1_button_link");
-            $row_1_button_text = get_field("row_1_button_text");
-            $row_1_copy = get_field("row_1_copy");?>
-            <header><h1><?php the_title();?></h1></header>
-            <?php if($row_1_copy):?>
-                <div class="copy">
-                    <?php echo $row_1_copy;?>
-                </div><!--.copy-->
-            <?php endif;
-            if($row_1_button_link&&$row_1_button_text):?>
-                <button>
-                    <a href="<?php echo $row_1_button_link;?>">
-                        <?php echo $row_1_button_text;?>
-                    </a>
-                </button>
-            <?php endif;?>
+            <div class="wrapper">
+                <?php $row_1_button_link = get_field("row_1_button_link");
+                $row_1_button_text = get_field("row_1_button_text");
+                $row_1_button_text_red = get_field("row_1_button_text_red");
+                $row_1_copy = get_field("row_1_copy");?>
+                <header><h1><?php the_title();?></h1></header>
+                <?php if($row_1_copy):?>
+                    <div class="copy">
+                        <?php echo $row_1_copy;?>
+                    </div><!--.copy-->
+                <?php endif;
+                if($row_1_button_link&&$row_1_button_text):?>
+                    <button>
+                        <a href="<?php echo $row_1_button_link;?>">
+                            <?php echo $row_1_button_text;?>
+                            <?php if($row_1_button_text_red):
+                                echo '&nbsp;<span class="red">'.$row_1_button_text_red.'</span>';
+                            endif;?>
+                        </a>
+                    </button>
+                <?php endif;?>
+            </div><!--.wrapper-->
         </div><!--.wrapper.cap-->
     </section><!--.row-1-->
     <section class="row-2">
