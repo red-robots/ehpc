@@ -117,6 +117,7 @@
                         margin: 0;
                         color: white;
                         font-size: 25px;
+                        text-transform: uppercase;
                         @media screen and (min-width: $tabwidth){
                             font-size: 45px;
                         }
@@ -160,81 +161,314 @@
         }
     }
     >.row-2 {
+        background-color: $color__ehpc-dark-red;
         >.wrapper.cap {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 2.5% 0 4% 0;
+                @include flexbox();
+                @include flexbox-justify(space-between);
+                @include flexbox-align-items(center);
+                @include flexbox-align-content(center);
+            }
             >.col-1 {
+                @media screen and (min-width: $tabwidth){
+                    width: 40%;
+                }
                 header {
                     h2 {
-
+                        margin: 0;
+                        color: white;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 45px;
+                        }
                     }
                 }
                 .copy {
+                    margin: 20px 0 0 0;
+                    color: white;
+                    font-size: 16px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
 
                 }
             }
             >.col-2 {
+                margin: 20px 0 0 0;
+                @media screen and (min-width: $tabwidth){
+                    width: 60%;
+                    margin: 0;
+                }
 
             }
         }
     }
     >.row-3 {
+        background-color: $color__ehpc-light-grey;
         >.wrapper.cap {
-
+            padding: 20px 0 40px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 6% 0 9% 0;
+                @include flexbox();
+                @include flexbox-justify(space-between);
+                @include flexbox-align-items(stretch);
+                @include flexbox-align-content(stretch);
+            } 
+            .col {
+                margin: 20px 0 0 0;
+                @include flexbox();
+                @include flexbox-justify(stretch);
+                @include flexbox-align-items(center);
+                @include flexbox-align-content(center);
+                @include flexbox-direction(column);
+                @media screen and (min-width: $tabwidth){
+                    width: 1/3*85%;
+                    margin: 0;
+                }
+                &:first-child {
+                    margin: 0;
+                }
+                button {
+                    margin: auto 0 0 0;
+                    border: 3px solid $color__ehpc-button-grey;
+                    border-radius: 900px;
+                    box-shadow: none;
+                    text-shadow: none;
+                    display: inline-block;
+                    background-color: white;
+                    a {
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        display: block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: $color__ehpc-red;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
     >.row-4 {
+        position: relative;
         .red-box {
-
+            width: 20%;
+            top: 0;
+            left: 0;
+            background-color: $color__ehpc-red;
+            position: absolute;
+            height: 100%;
+            z-index: -1;
         }
         .image {
+            background-position: center;
+            background-size: cover;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            height: 100%;
+            z-index: -1;
             .overlay {
-
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20%;
+                height: 100%;
+                background: $color__ehpc-red; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(left, $color__ehpc-red ,transparent ); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(right, $color__ehpc-red, transparent); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(right, $color__ehpc-red, transparent); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(to right, $color__ehpc-red, transparent); /* Standard syntax */
             }
         }
         >.wrapper.cap {
-            header {
-                h2 {
-
+            >.wrapper {
+                padding: 20px 0 40px 0;
+                @media screen and (min-width: $tabwidth){
+                    padding: 7% 0 12% 0;
+                    width: 40%;
                 }
-            }
-            .copy {
-
-            }
-            button {
-                a {
-
+                header {
+                    h2 {
+                        margin: 0;
+                        color: white;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 45px;
+                        }
+                    }
+                }
+                .copy {
+                    margin: 30px 0 0 0;
+                    color: white;
+                    font-size: 16px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                        margin: 8% 0 0 0;
+                    }
+                    h3 {
+                        color: white;
+                        margin: 0;
+                        font-style: italic;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+                button {
+                    margin: 20px 0 0 0;
+                    border: 3px solid $color__ehpc-button-grey;
+                    border-radius: 900px;
+                    box-shadow: none;
+                    text-shadow: none;
+                    background-color: white;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 8% 0 0 0;
+                    }
+                    a {
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        display: block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: $color__ehpc-button-grey;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+                        .red {
+                            color: $color__ehpc-red;
+                        }
+                    }
                 }
             }
         }
     }
     >.row-5 {
+        background-color: $color__ehpc-dark-red;
         >.wrapper.cap {
+            padding: 20px 0 40px 0;
+            text-align: center;
+            @media screen and (min-width: $tabwidth){
+                padding: 3.5% 0 5.5% 0;
+            }
             header {
+                @media screen and (min-width: $tabwidth){
+                    max-width: 50%;
+                    margin: 0 auto;
+                }
                 h2 {
-
+                    margin: 0;
+                    color: white;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 45px;
+                    }
                 }
             }
             .copy {
-
+                margin: 20px 0 0 0;
+                color: white;
+                font-size: 16px;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 20px;
+                    margin: 3% auto 0 auto;
+                    max-width: 50%;
+                }
             }
             button {
+                margin: 20px 0 0 0;
+                border: 3px solid $color__ehpc-button-grey;
+                border-radius: 900px;
+                box-shadow: none;
+                text-shadow: none;
+                background-color: white;
+                @media screen and (min-width: $tabwidth){
+                    margin: 4% 0 0 0;
+                }
                 a {
-
+                    padding: 15px 40px;
+                    font-size: 16px;
+                    display: block;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $color__ehpc-red;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
                 }
             }
         }
     }
     >.row-6 {
         >.wrapper.cap {
+            padding: 20px 0 40px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 6% 0 9% 0;
+                @include flexbox();
+                @include flexbox-justify(space-between);
+                @include flexbox-align-items(stretch);
+                @include flexbox-align-content(stretch);
+            } 
             .col {
+                margin: 20px 0 0 0;
+                @include flexbox();
+                @include flexbox-justify(stretch);
+                @include flexbox-align-items(center);
+                @include flexbox-align-content(center);
+                @include flexbox-direction(column);
+                @media screen and (min-width: $tabwidth){
+                    width: 1/3*95%;
+                    margin: 0;
+                }
+                &:first-child {
+                    margin: 0;
+                }
                 img {
-
+                    width: 100%;
+                    display: block;
                 }
                 .copy {
+                    width: 100%;
+                    margin: 20px 0 40px 0;
+                    color: $color__ehpc-green;
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 0 10px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
 
                 }
                 button {
+                    margin: auto 0 0 0;
+                    border: 3px solid $color__ehpc-button-grey;
+                    border-radius: 900px;
+                    box-shadow: none;
+                    text-shadow: none;
+                    display: inline-block;
+                    background-color: white;
                     a {
-
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        display: block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: $color__ehpc-red;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
                     }
                 }
             }

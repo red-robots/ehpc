@@ -74,25 +74,31 @@
             </div><!--.overlay-->
         </div><!--.image-->
         <div class="wrapper cap">
-            <?php $row_4_title = get_field("row_4_title");
-            $row_4_button_link = get_field("row_4_button_link");
-            $row_4_button_text = get_field("row_4_button_text");
-            $row_4_copy = get_field("row_4_copy");?>
-            <?php if($row_4_title):?>
-                <header><h2><?php echo $row_4_title;?></h2></header>
-            <?php endif; 
-            if($row_4_copy):?>
-                <div class="copy">
-                    <?php echo $row_4_copy;?>
-                </div><!--.copy-->
-            <?php endif;
-            if($row_4_button_link&&$row_4_button_text):?>
-                <button>
-                    <a href="<?php echo $row_4_button_link;?>">
-                        <?php echo $row_4_button_text;?>
-                    </a>
-                </button>
-            <?php endif;?>
+            <div class="wrapper">
+                <?php $row_4_title = get_field("row_4_title");
+                $row_4_button_link = get_field("row_4_button_link");
+                $row_4_button_text = get_field("row_4_button_text");
+                $row_4_button_text_red = get_field("row_4_button_text_red");
+                $row_4_copy = get_field("row_4_copy");?>
+                <?php if($row_4_title):?>
+                    <header><h2><?php echo $row_4_title;?></h2></header>
+                <?php endif; 
+                if($row_4_copy):?>
+                    <div class="copy">
+                        <?php echo $row_4_copy;?>
+                    </div><!--.copy-->
+                <?php endif;
+                if($row_4_button_link&&$row_4_button_text):?>
+                    <button>
+                        <a href="<?php echo $row_4_button_link;?>">
+                            <?php echo $row_4_button_text;?>
+                            <?php if($row_4_button_text_red):
+                                echo '&nbsp;<span class="red">'.$row_4_button_text_red.'</span>';
+                            endif;?>
+                        </a>
+                    </button>
+                <?php endif;?>
+            </div><!--.wrapper-->
         </div><!--.wrapper.cap-->
     </section><!--.row-4-->
     <section class="row-5">
