@@ -1586,6 +1586,8 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-page>.wrapper.cap{padding:4% 0}
 }.template-page>.wrapper.cap>section.row-1 header h1{margin:0;font-size:25px;text-transform:uppercase}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h1{font-size:45px}
+}.template-page>.wrapper.cap>section.row-1 header h2{margin:0;font-size:20px}
+@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h2{font-size:25px}
 }.template-page>.wrapper.cap>section.row-1 .copy{margin:20px 0 0 0}
 @media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 .copy{margin:40px 0 0 0}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
