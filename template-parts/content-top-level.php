@@ -63,6 +63,140 @@
     </section><!--.row-2-->
     <section class="row-3">
         <div class="wrapper cap">
+            <?php $today = date('Ymd');
+            $news_title = get_field("news_title","option");
+            $events_title = get_field("events_title","option");
+            $news_button_text = get_field("news_button_text","option");
+            $news_button_link = get_field("news_button_link","option");
+            $events_button_text = get_field("events_button_text","option");
+            $events_button_link = get_field("events_button_link","option");
+            $news_events_read_more_text = get_field("news_events_read_more_text","option");?>
+            <div class="col">
+                <header>
+                    <h2><?php echo $news_title;?></h2>
+                </header>
+                <?php $args = array(
+                    'post_type'=>'post',
+                    'posts_per_page'=>-1,
+                    'meta_type' => 'NUMERIC',
+                    'meta_query' => array(
+                        'relation' => 'OR',
+                        array(
+                            'key' => 'date',
+                            'value' => NULL,
+                            'compare' => '='
+                        ),
+                        array(
+                            'key' => 'date',
+                            'compare' => 'NOT EXISTS'
+                        ),
+                        array(
+                            'key' => 'date',
+                            'value' => $today,
+                            'compare' => '>'
+                        )
+                    )
+                );
+                $query = new WP_Query($args);
+                if($query->have_posts()):?>
+                    <div class="wrapper">
+                        <?php while($query->have_posts()):$query->the_post();?>
+                            <div class="news-event clear-bottom">
+                                <div class="col-1">
+                                    <?php $date = get_field("date");?>
+                                    <?php $splits = explode(',',$date);
+                                    echo str_replace(' ','</br>',$splits[0])?>
+                                </div><!--.col-1-->
+                                <div class="col-2">
+                                    <?php if(get_the_excerpt()):?>
+                                        <div class="row-1 copy">
+                                            <?php the_excerpt();?>
+                                        </div><!--.row-1-->
+                                    <?php endif;
+                                    if($news_events_read_more_text):?>
+                                        <div class="row-2">
+                                            <a href="<?php echo get_the_permalink();?>">
+                                                <?php echo $news_events_read_more_text.'&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>';?>
+                                            </a>
+                                        </div><!--.row-2-->
+                                    <?php endif;?>
+                                </div><!--.col-2-->
+                            </div><!--.news-event-->
+                        <?php endwhile;?>
+                    </div><!--.wrapper-->
+                    <?php wp_reset_postdata();
+                endif;?>
+                <?php if($news_button_link&&$news_button_text):?>
+                    <button>
+                        <a href="<?php echo $news_button_link;?>">
+                            <?php echo $news_button_text;?>
+                        </a>
+                    </button>
+                <?php endif;?>
+            </div><!--.col-->
+            <div class="col">
+                <header>
+                    <h2><?php echo $events_title;?></h2>
+                </header>
+                <?php $args = array(
+                    'post_type'=>'event',
+                    'posts_per_page'=>-1,
+                    'meta_type' => 'NUMERIC',
+                    'meta_query' => array(
+                        'relation' => 'OR',
+                        array(
+                            'key' => 'date',
+                            'value' => NULL,
+                            'compare' => '='
+                        ),
+                        array(
+                            'key' => 'date',
+                            'compare' => 'NOT EXISTS'
+                        ),
+                        array(
+                            'key' => 'date',
+                            'value' => $today,
+                            'compare' => '>'
+                        )
+                    )
+                );
+                $query = new WP_Query($args);
+                if($query->have_posts()):?>
+                    <div class="wrapper">
+                        <?php while($query->have_posts()):$query->the_post();?>
+                            <div class="news-event clear-bottom">
+                                <div class="col-1">
+                                    <?php $date = get_field("date");?>
+                                    <?php $splits = explode(',',$date);
+                                    echo str_replace(' ','</br>',$splits[0])?>
+                                </div><!--.col-1-->
+                                <div class="col-2">
+                                    <?php if(get_the_excerpt()):?>
+                                        <div class="row-1 copy">
+                                            <?php the_excerpt();?>
+                                        </div><!--.row-1-->
+                                    <?php endif;
+                                    if($news_events_read_more_text):?>
+                                        <div class="row-2">
+                                            <a href="<?php echo get_the_permalink();?>">
+                                                <?php echo $news_events_read_more_text.'&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>';?>
+                                            </a>
+                                        </div><!--.row-2-->
+                                    <?php endif;?>
+                                </div><!--.col-2-->
+                            </div><!--.news-event-->
+                        <?php endwhile;?>
+                    </div><!--.wrapper-->
+                    <?php wp_reset_postdata();
+                endif;?>
+                <?php if($events_button_link&&$events_button_text):?>
+                    <button>
+                        <a href="<?php echo $events_button_link;?>">
+                            <?php echo $events_button_text;?>
+                        </a>
+                    </button>
+                <?php endif;?>
+            </div><!--.col-->
         </div><!--.wrapper.cap-->
     </section><!--.row-3-->
     <section class="row-4">
