@@ -1581,14 +1581,21 @@ html[xmlns] .flexslider .slides{display:block}
 .template-news-events>.wrapper.cap>aside.col-2 ul li{margin:10px 0 0 0;list-style-type:none}
 .template-news-events>.wrapper.cap>aside.col-2 ul li a{text-decoration:none;color:#e2231a}
 .template-news-events>.wrapper.cap>aside.col-2 ul li a:hover{color:#8a0600}
-.template-page>.wrapper.cap,.error-404>.wrapper.cap{padding:20px 0}
-@media screen and (min-width:600px){.template-page>.wrapper.cap,.error-404>.wrapper.cap{padding:4% 0}
-}.template-page>.wrapper.cap>section.row-1 header h1,.error-404>.wrapper.cap>section.row-1 header h1{margin:0;font-size:25px;text-transform:uppercase}
-@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h1,.error-404>.wrapper.cap>section.row-1 header h1{font-size:45px}
-}.template-page>.wrapper.cap>section.row-1 header h2,.error-404>.wrapper.cap>section.row-1 header h2{margin:0;font-size:20px}
-@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h2,.error-404>.wrapper.cap>section.row-1 header h2{font-size:25px}
-}.template-page>.wrapper.cap>section.row-1 .copy,.error-404>.wrapper.cap>section.row-1 .copy{margin:20px 0 0 0}
-@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 .copy,.error-404>.wrapper.cap>section.row-1 .copy{margin:40px 0 0 0}
+.template-page>.wrapper.cap,.error-404>.wrapper.cap,.template-leadership>.wrapper.cap{padding:20px 0}
+@media screen and (min-width:600px){.template-page>.wrapper.cap,.error-404>.wrapper.cap,.template-leadership>.wrapper.cap{padding:4% 0}
+}.template-page>.wrapper.cap>section.row-1 header h1,.error-404>.wrapper.cap>section.row-1 header h1,.template-leadership>.wrapper.cap>section.row-1 header h1{margin:0;font-size:25px;text-transform:uppercase}
+@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h1,.error-404>.wrapper.cap>section.row-1 header h1,.template-leadership>.wrapper.cap>section.row-1 header h1{font-size:45px}
+}.template-page>.wrapper.cap>section.row-1 header h2,.error-404>.wrapper.cap>section.row-1 header h2,.template-leadership>.wrapper.cap>section.row-1 header h2{margin:0;font-size:20px}
+@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 header h2,.error-404>.wrapper.cap>section.row-1 header h2,.template-leadership>.wrapper.cap>section.row-1 header h2{font-size:25px}
+}.template-page>.wrapper.cap>section.row-1 .copy,.error-404>.wrapper.cap>section.row-1 .copy,.template-leadership>.wrapper.cap>section.row-1 .copy{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-page>.wrapper.cap>section.row-1 .copy,.error-404>.wrapper.cap>section.row-1 .copy,.template-leadership>.wrapper.cap>section.row-1 .copy{margin:40px 0 0 0}
+}.template-leadership>.wrapper.cap>section.row-2{margin:20px 0 0 0}
+.template-leadership>.wrapper.cap>section.row-2>.leader{padding:20px 0;border-bottom:1px solid #333}
+@media screen and (min-width:600px){.template-leadership>.wrapper.cap>section.row-2>.leader{padding:20px}
+}@media screen and (min-width:600px){.template-leadership>.wrapper.cap>section.row-2>.leader>.col-1{width:20%;float:left}
+}.template-leadership>.wrapper.cap>section.row-2>.leader>.col-1 img{width:100%;display:block}
+.template-leadership>.wrapper.cap>section.row-2>.leader>.col-2{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-leadership>.wrapper.cap>section.row-2>.leader>.col-2{width:80%;margin:0;float:left;padding:0 0 0 4%}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

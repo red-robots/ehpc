@@ -661,7 +661,7 @@
         }
     }
 }
-.template-page, .error-404 {
+.template-page, .error-404, .template-leadership {
     >.wrapper.cap {
         padding: 20px 0;
         @media screen and (min-width: $tabwidth){
@@ -689,6 +689,39 @@
                 margin: 20px 0 0 0;
                 @media screen and (min-width: $tabwidth){
                     margin: 40px 0 0 0;
+                }
+            }
+        }
+    }
+}
+.template-leadership {
+    >.wrapper.cap {
+        >section.row-2 {
+            margin: 20px 0 0 0;
+            >.leader {
+                padding: 20px 0;
+                border-bottom: 1px solid $color__ehpc-grey;
+                @media screen and (min-width: $tabwidth){
+                    padding: 20px;
+                }
+                >.col-1 {
+                    @media screen and (min-width: $tabwidth){
+                        width: 20%;
+                        float: left;
+                    }
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                >.col-2 {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        width: 80%;
+                        margin: 0;
+                        float: left;
+                        padding: 0 0 0 4%;
+                    }
                 }
             }
         }
