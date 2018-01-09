@@ -65,12 +65,12 @@
         <div class="wrapper cap">
             <?php $today = date('Ymd');
             $tax = get_field("tax");
-            $news_title = get_field("news_title","option");
-            $events_title = get_field("events_title","option");
-            $news_button_text = get_field("news_button_text","option");
-            $news_button_link = get_field("news_button_link","option");
-            $events_button_text = get_field("events_button_text","option");
-            $events_button_link = get_field("events_button_link","option");
+            $news_title = get_field("news_title");
+            $events_title = get_field("events_title");
+            $news_button_text = get_field("news_button_text");
+            $news_button_link = get_field("news_button_link");
+            $events_button_text = get_field("events_button_text");
+            $events_button_link = get_field("events_button_link");
             $news_events_read_more_text = get_field("news_events_read_more_text","option");?>
             <div class="col">
                 <?php if($news_title):?>
