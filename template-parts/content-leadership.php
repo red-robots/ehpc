@@ -14,10 +14,6 @@
         <section class="row-1">
             <header>
                 <h1><?php the_title();?></h1>
-                <?php $date = get_field("date");
-                if($date):?>
-                    <h2><?php echo $date;?></h2>
-                <?php endif;?>
             </header>
             <?php if(get_the_content()):?>
                 <div class="copy">
@@ -25,9 +21,17 @@
                 </div><!--.copy-->
             <?php endif;?>
         </section><!--.row-1-->
-        <?php $args = array(
+        <?php $tax = get_field("tax");
+            $args = array(
             'post_type'=>'leader',
             'posts_per_page'=>-1,
+            'tax_query'=> array(
+                array(
+                    'taxonomy'=>'category',
+                    'field'=>'term_id',
+                    'terms'=>$tax,
+                )
+            )
         );
         $query = new WP_Query($args);
         if($query->have_posts()):?>

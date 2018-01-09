@@ -73,3 +73,10 @@ function js_custom_init()
   // and here
   
   } // close custom post type
+
+function build_taxonomies() {
+  // adding to existing tax
+	register_taxonomy_for_object_type( 'category', 'event' );
+	register_taxonomy_for_object_type( 'category', 'leader' );
+} // End build taxonomies
+add_action( 'init', 'build_taxonomies');
