@@ -22,6 +22,9 @@ global $post_type;
                 'post_type'=>$post_type,
                 'paged'=>$paged,
                 'posts_per_page'=>10,
+                'meta_key'=> 'date',
+                'orderby'=> 'meta_value_num',
+                'order'=>'ASC',
                 'meta_type' => 'NUMERIC',
                 'meta_query' => array(
                     'relation' => 'OR',

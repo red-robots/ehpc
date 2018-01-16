@@ -184,7 +184,7 @@
 				}
 				button {
 					text-transform: uppercase;
-					margin: 0;
+					margin: 0 0 20px 0;
 					display: inline-block;
 					border: 1px solid $color__ehpc-grey;
 					color: $color__ehpc-grey;
@@ -207,13 +207,17 @@
 					@media screen and (min-width: $tabwidth){
 						display: block;
 					}
-					ul {
+					>ul {
 						margin: 0;
-						padding: 0;
-						li {
+						padding: 0 0 20px 0;
+						@media screen and (min-width: $tabwidth){
+							padding: 0;
+						}
+						>li {
 							padding: 10px 10px 0 10px;
 							list-style-type: none;
 							display: block;
+							position: relative;
 							@media screen and (min-width: $tabwidth){
 								display: inline-block;
 								padding: 0 25px;
@@ -221,7 +225,12 @@
 									padding-right: 0;
 								}
 							}
-							a {
+							&:hover {
+								>ul.sub-menu {
+									display: block;
+								}
+							}
+							>a {
 								display: block;
 								text-decoration: none;
 								color: $color__ehpc-grey;
@@ -230,6 +239,40 @@
 								@media screen and (min-width: $tabwidth){
 									font-size: 20px;
 									font-weight: 700;
+								}
+							}
+							>ul.sub-menu {
+								margin: 0;
+								padding: 0;
+								@media screen and (min-width: $tabwidth){
+									z-index: 3;
+									padding: 10px 0;
+									display: none;
+									position: absolute;
+									top: 100%;
+									left: 50%;
+									width: 200px;
+									border: 1px solid $color__ehpc-red;
+									background-color: white;
+									text-align: left;
+									@include translatexy(-50%, 0);
+								}
+								>li {
+									padding: 10px 10px 0 10px;
+									list-style-type: none;
+									&:first-child{
+										@media screen and (min-width: $tabwidth){
+											padding-top: 0;
+										}
+									}
+									>a {
+										color: $color__ehpc-grey;
+										font-size: 14px;
+										text-decoration: none;
+										@media screen and (min-width: $tabwidth){
+											font-size: 16px;
+										}
+									}
 								}
 							}
 						}

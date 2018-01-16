@@ -82,20 +82,23 @@
                     $args = array(
                         'post_type'=>'post',
                         'posts_per_page'=>-1,
+                        'meta_key'=> 'date',
+                        'orderby'=> 'meta_value_num',
+                        'order'=>'ASC',
                         'meta_type' => 'NUMERIC',
                         'meta_query' => array(
                             'relation' => 'OR',
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'value' => NULL,
                                 'compare' => '='
                             ),
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'compare' => 'NOT EXISTS'
                             ),
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'value' => $today,
                                 'compare' => '>'
                             )
@@ -156,20 +159,23 @@
                     $args = array(
                         'post_type'=>'event',
                         'posts_per_page'=>-1,
+                        'meta_key'=> 'date',
+                        'orderby'=> 'meta_value_num',
+                        'order'=>'ASC',
                         'meta_type' => 'NUMERIC',
                         'meta_query' => array(
                             'relation' => 'OR',
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'value' => NULL,
                                 'compare' => '='
                             ),
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'compare' => 'NOT EXISTS'
                             ),
                             array(
-                                'key' => 'date',
+                                'key' => 'rolloff_date',
                                 'value' => $today,
                                 'compare' => '>'
                             )
