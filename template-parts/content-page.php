@@ -14,7 +14,7 @@
         <section class="row-1">
             <header>
                 <h1><?php the_title();?></h1>
-                <?php $date = get_field("date");
+                <?php $date = get_field("date_text");
                 if($date):?>
                     <h2><?php echo $date;?></h2>
                 <?php endif;?>

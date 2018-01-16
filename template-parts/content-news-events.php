@@ -26,16 +26,16 @@ global $post_type;
                 'meta_query' => array(
                     'relation' => 'OR',
                     array(
-                        'key' => 'date',
+                        'key' => 'rolloff_date',
                         'value' => NULL,
                         'compare' => '='
                     ),
                     array(
-                        'key' => 'date',
+                        'key' => 'rolloff_date',
                         'compare' => 'NOT EXISTS'
                     ),
                     array(
-                        'key' => 'date',
+                        'key' => 'rolloff_date',
                         'value' => $today,
                         'compare' => '>'
                     )
