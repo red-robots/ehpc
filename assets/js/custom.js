@@ -69,4 +69,45 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 
+	$('.n-one').hover(function(){
+		$('.n-one').css({
+			transform: 'translateX(-15%) translateY(-30%) scale(1.3)',
+			transition: '1s all'
+		});
+	}, function(){
+		$('.n-one').css({
+			transform: ''
+		});
+	});
+	$('.n-two').hover(function(){
+		$('.n-two').css({
+
+		})
+	}, function(){
+		$('.n-two').css({
+			transform: ''
+		});
+
+	});
+	$('.n-three').hover(function(){
+		$('.n-three').css({
+
+		})
+	}, function(){
+		$('.n-three').css({
+			transform: ''
+		});
+
+	});
+	$('.n-four').hover(function(){
+		$('.n-four').css({
+
+		})
+	}, function(){
+		$('.n-four').css({
+			transform: ''
+		});
+
+	});
+
 });// END #####################################    END

@@ -1461,18 +1461,17 @@ html[xmlns] .flexslider .slides{display:block}
 .template-index>.wrapper.cap{padding:10% 0 25% 0}
 .template-index>.wrapper.cap svg{width:70%;display:block;margin:0 auto;overflow:visible}
 @media screen and (min-width:600px){.template-index>.wrapper.cap svg{width:45%}
-}.template-index>.wrapper.cap svg .one text{display:none}
-.template-index>.wrapper.cap svg .one:hover{z-index:10;-webkit-transform:translateX(-15%) translateY(-30%) scale(1.3);-ms-transform:translateX(-15%) translateY(-30%) scale(1.3);transform:translateX(-15%) translateY(-30%) scale(1.3);-webkit-transition:1s all;transition:1s all}
-.template-index>.wrapper.cap svg .one:hover text{display:block}
-.template-index>.wrapper.cap svg .two text{display:none}
-.template-index>.wrapper.cap svg .two:hover{z-index:10;-webkit-transform:translateX(-30%) translateY(-25%) scale(1.3);-ms-transform:translateX(-30%) translateY(-25%) scale(1.3);transform:translateX(-30%) translateY(-25%) scale(1.3);-webkit-transition:1s all;transition:1s all}
-.template-index>.wrapper.cap svg .two:hover text{display:block}
-.template-index>.wrapper.cap svg .three text{display:none}
-.template-index>.wrapper.cap svg .three:hover{z-index:10;-webkit-transform:translateX(-25%) translateY(-20%) scale(1.3);-ms-transform:translateX(-25%) translateY(-20%) scale(1.3);transform:translateX(-25%) translateY(-20%) scale(1.3);-webkit-transition:1s all;transition:1s all}
-.template-index>.wrapper.cap svg .three:hover text{display:block}
-.template-index>.wrapper.cap svg .four text{display:none}
-.template-index>.wrapper.cap svg .four:hover{z-index:10;-webkit-transform:translateX(-20%) translateY(-15%) scale(1.3);-ms-transform:translateX(-20%) translateY(-15%) scale(1.3);transform:translateX(-20%) translateY(-15%) scale(1.3);-webkit-transition:1s all;transition:1s all}
-.template-index>.wrapper.cap svg .four:hover text{display:block}
+}.template-index>.wrapper.cap svg .n-one text{display:none}
+.template-index>.wrapper.cap svg .n-one:hover text{display:block}
+.template-index>.wrapper.cap svg .n-two text{display:none}
+.template-index>.wrapper.cap svg .n-two:hover{-webkit-transform:translateX(-30%) translateY(-25%) scale(1.3);-ms-transform:translateX(-30%) translateY(-25%) scale(1.3);transform:translateX(-30%) translateY(-25%) scale(1.3);-webkit-transition:1s all;transition:1s all}
+.template-index>.wrapper.cap svg .n-two:hover text{display:block}
+.template-index>.wrapper.cap svg .n-three text{display:none}
+.template-index>.wrapper.cap svg .n-three:hover{-webkit-transform:translateX(-25%) translateY(-20%) scale(1.3);-ms-transform:translateX(-25%) translateY(-20%) scale(1.3);transform:translateX(-25%) translateY(-20%) scale(1.3);-webkit-transition:1s all;transition:1s all}
+.template-index>.wrapper.cap svg .n-three:hover text{display:block}
+.template-index>.wrapper.cap svg .n-four text{display:none}
+.template-index>.wrapper.cap svg .n-four:hover{-webkit-transform:translateX(-20%) translateY(-15%) scale(1.3);-ms-transform:translateX(-20%) translateY(-15%) scale(1.3);transform:translateX(-20%) translateY(-15%) scale(1.3);-webkit-transition:1s all;transition:1s all}
+.template-index>.wrapper.cap svg .n-four:hover text{display:block}
 .template-top-level>.row-1{position:relative}
 .template-top-level>.row-1 .red-box{width:20%;top:0;left:0;background-color:#e2231a;position:absolute;height:100%;z-index:-1}
 .template-top-level>.row-1 .image{background-position:center;background-size:cover;width:80%;position:absolute;top:0;left:20%;height:100%;z-index:-1}
