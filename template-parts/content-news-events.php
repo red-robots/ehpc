@@ -18,6 +18,12 @@ global $post_type;
             <?php $today = date('Ymd');
             $tax = get_field('tax');
             $news_events_read_more_text = get_field("news_events_read_more_text","option");
+            $ancestors = get_post_ancestors( get_the_ID() );
+			if($ancestors&&!empty($ancestors)):
+                $ancestor = array_pop($ancestors);
+            else:
+                $ancestor = false;
+            endif;
             $args = array(
                 'post_type'=>$post_type,
                 'paged'=>$paged,
@@ -69,7 +75,11 @@ global $post_type;
                                 <?php endif;
                                 if($news_events_read_more_text):?>
                                     <div class="row-2">
-                                        <a href="<?php echo get_the_permalink();?>">
+                                        <a href="<?php if($ancestor):
+                                            echo esc_url(add_query_arg( 'from', $ancestor, get_the_permalink()));
+                                        else:
+                                            echo get_the_permalink();
+                                        endif;?>">
                                             <?php echo $news_events_read_more_text.'&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>';?>
                                         </a>
                                     </div><!--.row-2-->

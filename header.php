@@ -54,23 +54,8 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'acstarter' ); ?></button>
-					<?php switch(get_the_ID()):
-						case 6:
-							wp_nav_menu( array( 'theme_location' => 'smat' ) ); 
-							break;
-						case 10:
-							wp_nav_menu( array( 'theme_location' => 'public-health' ) ); 
-							break;
-						case 8:
-							wp_nav_menu( array( 'theme_location' => 'healthcare-preparedness' ) ); 
-							break;
-						case 12:
-							wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
-							break;
-					endswitch;?>
-					<?php $ancestors = get_post_ancestors( get_the_ID() );
-					if($ancestors&&!empty($ancestors)):
-						switch(array_pop($ancestors)):
+					<?php if(isset($_GET['from'])):
+						switch(intval($_GET['from'])):
 							case 6:
 								wp_nav_menu( array( 'theme_location' => 'smat' ) ); 
 								break;
@@ -84,6 +69,38 @@
 								wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
 								break;
 						endswitch;
+					else:	
+						switch(get_the_ID()):
+							case 6:
+								wp_nav_menu( array( 'theme_location' => 'smat' ) ); 
+								break;
+							case 10:
+								wp_nav_menu( array( 'theme_location' => 'public-health' ) ); 
+								break;
+							case 8:
+								wp_nav_menu( array( 'theme_location' => 'healthcare-preparedness' ) ); 
+								break;
+							case 12:
+								wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
+								break;
+						endswitch;?>
+						<?php $ancestors = get_post_ancestors( get_the_ID() );
+						if($ancestors&&!empty($ancestors)):
+							switch(array_pop($ancestors)):
+								case 6:
+									wp_nav_menu( array( 'theme_location' => 'smat' ) ); 
+									break;
+								case 10:
+									wp_nav_menu( array( 'theme_location' => 'public-health' ) ); 
+									break;
+								case 8:
+									wp_nav_menu( array( 'theme_location' => 'healthcare-preparedness' ) ); 
+									break;
+								case 12:
+									wp_nav_menu( array( 'theme_location' => 'emergency-management' ) ); 
+									break;
+							endswitch;
+						endif;
 					endif;?>
 				</nav><!-- #site-navigation -->
 			</div><!--.wrapper.cap-->

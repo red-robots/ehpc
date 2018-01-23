@@ -25,6 +25,9 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.flexslider').flexslider({
 		animation: "slide",
+		controlNav: false,
+		prevText: '<i class="fa fa-chevron-circle-left"></i>',
+		nextText: '<i class="fa fa-chevron-circle-right"></i>',
 	}); // end register flexslider
 	
 	/*

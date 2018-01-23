@@ -10,38 +10,47 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-top-level"); ?>>
-    <section class="row-1">
-        <div class="red-box">
-        </div><!--.red-box-->
-        <?php $row_1_image = get_field("row_1_image");?>
-        <div class="image" <?php if($row_1_image) echo 'style="background-image: url('.$row_1_image['url'].');"';?>>
-            <div class="overlay">
-            </div><!--.overlay-->
-        </div><!--.image-->
-        <div class="wrapper cap">
-            <div class="wrapper">
-                <?php $row_1_button_link = get_field("row_1_button_link");
-                $row_1_button_text = get_field("row_1_button_text");
-                $row_1_button_text_red = get_field("row_1_button_text_red");
-                $row_1_copy = get_field("row_1_copy");?>
-                <header><h1><?php the_title();?></h1></header>
-                <?php if($row_1_copy):?>
-                    <div class="copy">
-                        <?php echo $row_1_copy;?>
-                    </div><!--.copy-->
-                <?php endif;
-                if($row_1_button_link&&$row_1_button_text):?>
-                    <button>
-                        <a href="<?php echo $row_1_button_link;?>">
-                            <?php echo $row_1_button_text;?>
-                            <?php if($row_1_button_text_red):
-                                echo '&nbsp;<span class="red">'.$row_1_button_text_red.'</span>';
-                            endif;?>
-                        </a>
-                    </button>
-                <?php endif;?>
-            </div><!--.wrapper-->
-        </div><!--.wrapper.cap-->
+    <section class="row-1 flexslider">
+        <?php $flexslider = get_field("flexslider");
+        if($flexslider):?>
+            <ul class="slides">
+                <?php foreach($flexslider as $row):
+                    $row_1_image = $row["row_1_image"];
+                    $row_1_button_link = $row["row_1_button_link"];
+                    $row_1_button_text = $row["row_1_button_text"];
+                    $row_1_button_text_red = $row["row_1_button_text_red"];
+                    $row_1_copy = $row["row_1_copy"];?>
+                    <li class="slide">
+                        <div class="red-box">
+                        </div><!--.red-box-->
+                        <div class="image" <?php if($row_1_image) echo 'style="background-image: url('.$row_1_image['url'].');"';?>>
+                            <div class="overlay">
+                            </div><!--.overlay-->
+                        </div><!--.image-->
+                        <div class="wrapper cap">
+                            <div class="wrapper">
+                                <header><h1><?php the_title();?></h1></header>
+                                <?php if($row_1_copy):?>
+                                    <div class="copy">
+                                        <?php echo $row_1_copy;?>
+                                    </div><!--.copy-->
+                                <?php endif;
+                                if($row_1_button_link&&$row_1_button_text):?>
+                                    <button>
+                                        <a href="<?php echo $row_1_button_link;?>">
+                                            <?php echo $row_1_button_text;?>
+                                            <?php if($row_1_button_text_red):
+                                                echo '&nbsp;<span class="red">'.$row_1_button_text_red.'</span>';
+                                            endif;?>
+                                        </a>
+                                    </button>
+                                <?php endif;?>
+                            </div><!--.wrapper-->
+                        </div><!--.wrapper.cap-->
+                    </li>
+                <?php endforeach;?>
+            </ul>
+        <?php endif;?>
     </section><!--.row-1-->
     <section class="row-2">
         <div class="wrapper cap">
@@ -71,7 +80,8 @@
             $news_button_link = get_field("news_button_link");
             $events_button_text = get_field("events_button_text");
             $events_button_link = get_field("events_button_link");
-            $news_events_read_more_text = get_field("news_events_read_more_text","option");?>
+            $news_events_read_more_text = get_field("news_events_read_more_text","option");
+            $page_id = get_the_ID();?>
             <div class="col">
                 <?php if($news_title):?>
                     <header>
@@ -81,7 +91,7 @@
                 if($tax):
                     $args = array(
                         'post_type'=>'post',
-                        'posts_per_page'=>-1,
+                        'posts_per_page'=>3,
                         'meta_key'=> 'date',
                         'orderby'=> 'meta_value_num',
                         'order'=>'ASC',
@@ -129,7 +139,7 @@
                                         <?php endif;
                                         if($news_events_read_more_text):?>
                                             <div class="row-2">
-                                                <a href="<?php echo get_the_permalink();?>">
+                                                <a href="<?php echo esc_url(add_query_arg( 'from', $page_id, get_the_permalink()));?>">
                                                     <?php echo $news_events_read_more_text.'&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>';?>
                                                 </a>
                                             </div><!--.row-2-->
@@ -158,7 +168,7 @@
                 if($tax):
                     $args = array(
                         'post_type'=>'event',
-                        'posts_per_page'=>-1,
+                        'posts_per_page'=>3,
                         'meta_key'=> 'date',
                         'orderby'=> 'meta_value_num',
                         'order'=>'ASC',
@@ -206,7 +216,7 @@
                                         <?php endif;
                                         if($news_events_read_more_text):?>
                                             <div class="row-2">
-                                                <a href="<?php echo get_the_permalink();?>">
+                                                <a href="<?php echo esc_url(add_query_arg( 'from', $page_id, get_the_permalink()));?>">
                                                     <?php echo $news_events_read_more_text.'&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>';?>
                                                 </a>
                                             </div><!--.row-2-->
