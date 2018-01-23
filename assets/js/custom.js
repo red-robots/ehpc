@@ -71,43 +71,38 @@ jQuery(document).ready(function ($) {
 
 	$('.n-one').hover(function(){
 		$('.n-one').css({
-			transform: 'translateX(-15%) translateY(-30%) scale(1.3)',
-			transition: '1s all'
+			filter: 'url(#dropshadow)'
 		});
 	}, function(){
 		$('.n-one').css({
-			transform: ''
+			filter: ''
 		});
 	});
 	$('.n-two').hover(function(){
 		$('.n-two').css({
-
-		})
+			filter: 'url(#dropshadow)'
+		});
 	}, function(){
 		$('.n-two').css({
-			transform: ''
+			filter: ''
 		});
-
 	});
 	$('.n-three').hover(function(){
 		$('.n-three').css({
-
-		})
+			filter: 'url(#dropshadow)'
+		});
 	}, function(){
 		$('.n-three').css({
-			transform: ''
+			filter: ''
 		});
-
 	});
 	$('.n-four').hover(function(){
 		$('.n-four').css({
-
-		})
+			filter: 'url(#dropshadow)'
+		});
 	}, function(){
 		$('.n-four').css({
-			transform: ''
+			filter: ''
 		});
-
 	});
-
 });// END #####################################    END

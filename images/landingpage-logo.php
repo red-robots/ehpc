@@ -8,6 +8,17 @@
 	.st1, .cls-2 {fill:#E2231A;}
 </style>
 <path class="st0" d="M408.38,272.39l-90.27-90.27s-22.61-22.61-45.22,0l-90.27,90.27s-22.61,22.61,0,45.22l90.27,90.27s22.61,22.61,45.22,0l90.27-90.27s22.61-22.61,0-45.22Zm-48.9,36.28c0,12.51-12.52,12.51-12.52,12.51H321.69v25.28c0,12.52-12.52,12.52-12.52,12.52H281.83c-12.52,0-12.52-12.52-12.52-12.52V321.19H244c-12.51,0-12.51-12.51-12.51-12.51V281.33c0-12.51,12.51-12.51,12.51-12.51h25.28V243.53c0-12.52,12.52-12.52,12.52-12.52h27.34c12.52,0,12.52,12.52,12.52,12.52v25.28H347c12.52,0,12.52,12.51,12.52,12.51v27.35Z" transform="translate(-7.48 -6.97)"/>
+<filter id="dropshadow" height="130%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="5"/> <!-- stdDeviation is how much to blur -->
+  <feOffset dx="0" dy="0" result="offsetblur"/> <!-- how much to offset -->
+  <feComponentTransfer>
+    <feFuncA type="linear" slope="0.5"/> <!-- slope is the opacity of the shadow -->
+  </feComponentTransfer>
+  <feMerge> 
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+  </feMerge>
+</filter>
 <g class="n-one">
 	<a href="<?php echo get_the_permalink(8);?>">
 		<path class="st1" d="M173.11,531.16c143,142.83,368.28-36.71,257.64-207.38L320.29,434.26c-67.15,67.14-176.92,67.14-243.9,0l96.72,96.9Z" transform="translate(-7.48 -6.97)"/>
@@ -17,7 +28,6 @@
 		</text>
 	</a>
 </g>
-
 <g class="n-two">
 	<a href="<?php echo get_the_permalink(10);?>">
 		<path class="st1" d="M531.65,417.39l-96.9,96.89c67.15-67.15,67.15-176.93,0-243.89L324.29,159.91C494.95,49.27,674.48,274.57,531.65,417.39Z" transform="translate(-7.48 -6.97)"/>
@@ -42,8 +52,4 @@
 		<text class="smat" x="50" y="350" fill="white">SMAT</text>
 	</a>
 </g>
-<path class="cls-2 n-one" d="M430.75,325.15,320.28,435.63a170.65,170.65,0,0,1-78.1,44.76l185.92,33.89C465.34,464.29,475.39,394,430.75,325.15Z" transform="translate(-7.48 -6.97)"/>
-<path class="cls-2 n-two" d="M325.65,159.91,436.12,270.38a170.65,170.65,0,0,1,44.76,78.1l33.89-185.92C464.79,125.32,394.5,115.28,325.65,159.91Z" transform="translate(-7.48 -6.97)"/>
-<path class="cls-2 n-three" d="M160.41,266.21,270.89,155.74A170.65,170.65,0,0,1,349,111L163.06,77.09C125.82,127.07,115.78,197.36,160.41,266.21Z" transform="translate(-7.48 -6.97)"/>
-<path class="cls-2 n-four" d="M267.14,430.26,156.66,319.79a170.65,170.65,0,0,1-44.76-78.1L78,427.62C128,464.85,198.29,474.9,267.14,430.26Z" transform="translate(-7.48 -6.97)"/>
 </svg>
