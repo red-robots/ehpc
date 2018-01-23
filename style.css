@@ -5905,9 +5905,9 @@ html[xmlns] .flexslider .slides {
       .template-index > .wrapper.cap svg .n-three text {
         display: none; }
       .template-index > .wrapper.cap svg .n-three:hover {
-        -webkit-transform: translateX(5%) translateY(-45%) scale(1.3);
-            -ms-transform: translateX(5%) translateY(-45%) scale(1.3);
-                transform: translateX(5%) translateY(-45%) scale(1.3);
+        -webkit-transform: translateX(5%) translateY(-47%) scale(1.3);
+            -ms-transform: translateX(5%) translateY(-47%) scale(1.3);
+                transform: translateX(5%) translateY(-47%) scale(1.3);
         -webkit-transition: .8s all;
         transition: .8s all; }
         .template-index > .wrapper.cap svg .n-three:hover text {
@@ -5915,9 +5915,9 @@ html[xmlns] .flexslider .slides {
       .template-index > .wrapper.cap svg .n-four text {
         display: none; }
       .template-index > .wrapper.cap svg .n-four:hover {
-        -webkit-transform: translateX(-40%) translateY(-40%) scale(1.3);
-            -ms-transform: translateX(-40%) translateY(-40%) scale(1.3);
-                transform: translateX(-40%) translateY(-40%) scale(1.3);
+        -webkit-transform: translateX(-45%) translateY(-40%) scale(1.3);
+            -ms-transform: translateX(-45%) translateY(-40%) scale(1.3);
+                transform: translateX(-45%) translateY(-40%) scale(1.3);
         -webkit-transition: .8s all;
         transition: .8s all; }
         .template-index > .wrapper.cap svg .n-four:hover text {
