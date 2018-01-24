@@ -185,7 +185,7 @@
                         color: white;
                         font-size: 25px;
                         text-transform: uppercase;
-                        @media screen and (min-width: $tabwidth){
+                        @media screen and (min-width: $midwidth){
                             font-size: 45px;
                         }
                     }
@@ -202,9 +202,34 @@
             }
             >.col-2 {
                 margin: 20px 0 0 0;
+                text-align: center;
                 @media screen and (min-width: $tabwidth){
                     width: 60%;
                     margin: 0;
+                }
+                button {
+                    margin: 20px 0 0 0;
+                    border: 3px solid $color__ehpc-button-grey;
+                    border-radius: 900px;
+                    box-shadow: none;
+                    text-shadow: none;
+                    background-color: white;
+                    display: inline-block;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 0 30px;
+                    }
+                    a {
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        display: block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: $color__ehpc-red;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+                    }
                 }
 
             }

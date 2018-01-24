@@ -67,83 +67,15 @@
                 <?php endif;?>
             </div><!--.col-1-->
             <div class="col-2">
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                <form action="https://facebook.us16.list-manage.com/subscribe/post?u=702f9f3e57a10aa5822fa106e&amp;id=d336230991" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                    <h2>Subscribe to our mailing list</h2>
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-LNAME">Last Name </label>
-                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group size1of2">
-                    <label for="mce-MMERGE5">Office Phone Number </label>
-                    <input type="text" name="MMERGE5" class="" value="" id="mce-MMERGE5">
-                </div>
-                <div class="mc-field-group size1of2">
-                    <label for="mce-MMERGE3">Mobile Phone Number </label>
-                    <input type="text" name="MMERGE3" class="" value="" id="mce-MMERGE3">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-MMERGE4">Position Title </label>
-                    <input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-MMERGE6">County </label>
-                    <input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
-                </div>
-                <div class="mc-field-group input-group">
-                    <strong>Representation </strong>
-                    <ul><li><input type="checkbox" value="1" name="group[2467][1]" id="mce-group[2467]-2467-0"><label for="mce-group[2467]-2467-0">Hospital Emergency Management</label></li>
-                <li><input type="checkbox" value="2" name="group[2467][2]" id="mce-group[2467]-2467-1"><label for="mce-group[2467]-2467-1">Emergency Management</label></li>
-                <li><input type="checkbox" value="4" name="group[2467][4]" id="mce-group[2467]-2467-2"><label for="mce-group[2467]-2467-2">Emergency Medical Services Representative</label></li>
-                <li><input type="checkbox" value="8" name="group[2467][8]" id="mce-group[2467]-2467-3"><label for="mce-group[2467]-2467-3">SMAT II Member</label></li>
-                <li><input type="checkbox" value="16" name="group[2467][16]" id="mce-group[2467]-2467-4"><label for="mce-group[2467]-2467-4">SMAT III Team Leader</label></li>
-                <li><input type="checkbox" value="32" name="group[2467][32]" id="mce-group[2467]-2467-5"><label for="mce-group[2467]-2467-5">Ambulance Strike Team Leader</label></li>
-                <li><input type="checkbox" value="64" name="group[2467][64]" id="mce-group[2467]-2467-6"><label for="mce-group[2467]-2467-6">Public Health Preparedness Coordinator</label></li>
-                <li><input type="checkbox" value="128" name="group[2467][128]" id="mce-group[2467]-2467-7"><label for="mce-group[2467]-2467-7">Public Health Eastern Regional Office</label></li>
-                <li><input type="checkbox" value="256" name="group[2467][256]" id="mce-group[2467]-2467-8"><label for="mce-group[2467]-2467-8">NC OEMS Eastern Regional Office</label></li>
-                <li><input type="checkbox" value="512" name="group[2467][512]" id="mce-group[2467]-2467-9"><label for="mce-group[2467]-2467-9">USAR Leader</label></li>
-                <li><input type="checkbox" value="1024" name="group[2467][1024]" id="mce-group[2467]-2467-10"><label for="mce-group[2467]-2467-10">Medical Ambulance Bus</label></li>
-                <li><input type="checkbox" value="2048" name="group[2467][2048]" id="mce-group[2467]-2467-11"><label for="mce-group[2467]-2467-11">Department of Defense</label></li>
-                <li><input type="checkbox" value="4096" name="group[2467][4096]" id="mce-group[2467]-2467-12"><label for="mce-group[2467]-2467-12">Hospice (Preparedness Planner)</label></li>
-                <li><input type="checkbox" value="8192" name="group[2467][8192]" id="mce-group[2467]-2467-13"><label for="mce-group[2467]-2467-13">Home Health Agency (Preparedness Planner)</label></li>
-                <li><input type="checkbox" value="16384" name="group[2467][16384]" id="mce-group[2467]-2467-14"><label for="mce-group[2467]-2467-14">Rural Health Clinic &amp; Federally Qualified Health Centers (Preparedness Planner)</label></li>
-                <li><input type="checkbox" value="32768" name="group[2467][32768]" id="mce-group[2467]-2467-15"><label for="mce-group[2467]-2467-15">Long Term Care (Preparedness Planner)</label></li>
-                <li><input type="checkbox" value="65536" name="group[2467][65536]" id="mce-group[2467]-2467-16"><label for="mce-group[2467]-2467-16">Intermediate Care Facilities for Individuals with Intellectual Disabilities (Preparedness Planner)</label></li>
-                <li><input type="checkbox" value="131072" name="group[2467][131072]" id="mce-group[2467]-2467-17"><label for="mce-group[2467]-2467-17">County EMS Director</label></li>
-                <li><input type="checkbox" value="262144" name="group[2467][262144]" id="mce-group[2467]-2467-18"><label for="mce-group[2467]-2467-18">County Medical Director</label></li>
-                <li><input type="checkbox" value="1048576" name="group[2467][1048576]" id="mce-group[2467]-2467-19"><label for="mce-group[2467]-2467-19">Other Healthcare Coalition</label></li>
-                <li><input type="checkbox" value="2097152" name="group[2467][2097152]" id="mce-group[2467]-2467-20"><label for="mce-group[2467]-2467-20">Other</label></li>
-                </ul>
-                </div>
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_702f9f3e57a10aa5822fa106e_d336230991" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-                </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='MMERGE5';ftypes[5]='phone';fnames[3]='MMERGE3';ftypes[3]='phone';fnames[4]='MMERGE4';ftypes[4]='text';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                <!--End mc_embed_signup-->
+                <?php $row_2_button_text = get_field("row_2_button_text");
+                $row_2_button_link = get_field("row_2_button_link");
+                if($row_2_button_link&&$row_2_button_text):?>
+                    <button>
+                        <a href="<?php echo $row_2_button_link;?>">
+                            <?php echo $row_2_button_text;?>
+                        </a>
+                    </button>
+                <?php endif;?>
             </div><!--.col-2-->
         </div><!--.wrapper.cap-->
     </section><!--.row-2-->
