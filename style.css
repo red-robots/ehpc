@@ -6262,7 +6262,7 @@ html[xmlns] .flexslider .slides {
         padding: 3.5% 0 5.5% 0; } }
     @media screen and (min-width: 600px) {
       .template-top-level > .row-5 > .wrapper.cap header {
-        max-width: 50%;
+        max-width: 80%;
         margin: 0 auto; } }
     .template-top-level > .row-5 > .wrapper.cap header h2 {
       margin: 0;
@@ -6280,7 +6280,7 @@ html[xmlns] .flexslider .slides {
         .template-top-level > .row-5 > .wrapper.cap .copy {
           font-size: 20px;
           margin: 3% auto 0 auto;
-          max-width: 50%; } }
+          max-width: 80%; } }
     .template-top-level > .row-5 > .wrapper.cap button {
       margin: 20px 0 0 0;
       border: 3px solid #333;

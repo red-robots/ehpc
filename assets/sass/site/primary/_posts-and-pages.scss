@@ -437,7 +437,7 @@
             }
             header {
                 @media screen and (min-width: $tabwidth){
-                    max-width: 50%;
+                    max-width: 80%;
                     margin: 0 auto;
                 }
                 h2 {
@@ -457,7 +457,7 @@
                 @media screen and (min-width: $tabwidth){
                     font-size: 20px;
                     margin: 3% auto 0 auto;
-                    max-width: 50%;
+                    max-width: 80%;
                 }
             }
             button {
