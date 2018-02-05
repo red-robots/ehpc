@@ -291,7 +291,7 @@
 	>.cap.wrapper {
 		padding: 20px 0;
 		@media screen and (min-width: $tabwidth){
-			padding: 5% 0 3.5% 0;
+			padding: 3.5% 0 3.5% 0;
 		}
 		>.row-1 {
 			@media screen and (min-width: $tabwidth){
@@ -356,7 +356,7 @@
 		>.row-2 {
 			margin: 40px 0 0 0;
 			@media screen and (min-width: $tabwidth){
-				margin: 10% 0 0 0;
+				margin: 5% 0 0 0;
 				@include flexbox();
 				@include flexbox-justify(space-between);
 				@include flexbox-align-items(stretch);
@@ -388,7 +388,7 @@
 			text-align: center;
 			margin: 40px 0 0 0;
 			@media screen and (min-width: $tabwidth){
-				margin: 7% 0 0 0;
+				margin: 4% 0 0 0;
 			}
 		}
 	}
