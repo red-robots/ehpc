@@ -103,6 +103,7 @@
                         left: 0;
                         width: 20%;
                         height: 100%;
+                        z-index: 1;
                         background: $color__ehpc-red; /* For browsers that do not support gradients */
                         background: -webkit-linear-gradient(left, $color__ehpc-red ,transparent ); /* For Safari 5.1 to 6.0 */
                         background: -o-linear-gradient(right, $color__ehpc-red, transparent); /* For Opera 11.1 to 12.0 */
@@ -384,6 +385,7 @@
                 left: 0;
                 width: 20%;
                 height: 100%;
+                z-index: 1;
                 background: $color__ehpc-red; /* For browsers that do not support gradients */
                 background: -webkit-linear-gradient(left, $color__ehpc-red ,transparent ); /* For Safari 5.1 to 6.0 */
                 background: -o-linear-gradient(right, $color__ehpc-red, transparent); /* For Opera 11.1 to 12.0 */

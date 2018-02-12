@@ -1480,7 +1480,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-top-level>.row-1 ul li.slide{list-style-type:none;position:relative}
 .template-top-level>.row-1 ul li.slide .red-box{width:20%;top:0;left:0;background-color:#e2231a;position:absolute;height:100%;z-index:-1}
 .template-top-level>.row-1 ul li.slide .image{background-position:center;background-size:cover;width:80%;position:absolute;top:0;left:20%;height:100%;z-index:-2}
-.template-top-level>.row-1 ul li.slide .image .overlay{position:absolute;top:0;left:0;width:20%;height:100%;background:#e2231a;background:-webkit-linear-gradient(left,#e2231a,transparent);background:linear-gradient(to right,#e2231a,transparent)}
+.template-top-level>.row-1 ul li.slide .image .overlay{position:absolute;top:0;left:0;width:20%;height:100%;z-index:1;background:#e2231a;background:-webkit-linear-gradient(left,#e2231a,transparent);background:linear-gradient(to right,#e2231a,transparent)}
 .template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper{padding:20px 0 40px 0}
 @media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper{padding:7% 0 12% 0;width:40%}
 }.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper header h1{margin:0;color:white;font-size:25px;text-transform:uppercase}
@@ -1535,7 +1535,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-top-level>.row-4{position:relative}
 .template-top-level>.row-4 .red-box{width:20%;top:0;left:0;background-color:#e2231a;position:absolute;height:100%;z-index:-1}
 .template-top-level>.row-4 .image{background-position:center;background-size:cover;width:80%;position:absolute;top:0;left:20%;height:100%;z-index:-2}
-.template-top-level>.row-4 .image .overlay{position:absolute;top:0;left:0;width:20%;height:100%;background:#e2231a;background:-webkit-linear-gradient(left,#e2231a,transparent);background:linear-gradient(to right,#e2231a,transparent)}
+.template-top-level>.row-4 .image .overlay{position:absolute;top:0;left:0;width:20%;height:100%;z-index:1;background:#e2231a;background:-webkit-linear-gradient(left,#e2231a,transparent);background:linear-gradient(to right,#e2231a,transparent)}
 .template-top-level>.row-4>.wrapper.cap>.wrapper{padding:20px 0 40px 0}
 @media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper{padding:7% 0 12% 0;width:40%}
 }.template-top-level>.row-4>.wrapper.cap>.wrapper header h2{margin:0;color:white;font-size:25px;text-transform:uppercase}
