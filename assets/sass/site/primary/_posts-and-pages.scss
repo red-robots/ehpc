@@ -4,66 +4,69 @@
     background-repeat: no-repeat;
     >.wrapper.cap {
         padding: 10% 0 25% 0;
-        svg {
+        >.wrapper {
             width: 70%;
-            display: block;
             margin: 0 auto;
-            overflow: visible;
             @media screen and (min-width: $tabwidth){
                 width: 45%;
             }
-            .n-one {
-                text {
-                    display: none;
-                }
-                &:hover {
-			        transform: translateX(-40%) translateY(-6%) scale(1.3);
-                    transition: .8s all;
-                    box-shadow: 0 0 5px black;
+            svg {
+                display: block;
+                width: 100%;
+                overflow: visible;
+                .n-one {
                     text {
-                        display: block;
+                        display: none;
                     }
-                }
+                    &:hover {
+                        transform: translateX(-30%) translateY(-8%) scale(1.3);
+                        transition: 1s all;
+                        box-shadow: 0 0 5px black;
+                        text {
+                            display: block;
+                        }
+                    }
 
-            }
-            .n-two {
-                text {
-                    display: none;
                 }
-                &:hover {
-                    transform: translateX(-7%) translateY(2%) scale(1.3);
-                    transition: .8s all;
+                .n-two {
                     text {
-                        display: block;
+                        display: none;
                     }
-                }
+                    &:hover {
+                        transform: translateX(-7%) translateY(2%) scale(1.3);
+                        transition: 1s all;
+                        text {
+                            display: block;
+                        }
+                    }
 
-            }
-            .n-three {
-                text {
-                    display: none;
                 }
-                &:hover {
-                    transform: translateX(5%) translateY(-47%) scale(1.3);
-                    transition: .8s all;
+                .n-three {
                     text {
-                        display: block;
+                        display: none;
                     }
-                }
+                    &:hover {
+                        transform: translateX(2%) translateY(-22%) scale(1.3);
+                        transition: 1s all;
+                        text {
+                            display: block;
+                        }
+                    }
 
-            }
-            .n-four {
-                text {
-                    display: none;
                 }
-                &:hover {
-                    transform: translateX(-45%) translateY(-40%) scale(1.3);
-                    transition: .8s all;
+                .n-four {
                     text {
-                        display: block;
+                        display: none;
                     }
-                }
+                    &:hover {
+                        transform: translateX(-21%) translateY(-30%) scale(1.3);
+                        transition: 1s all;
+                        text {
+                            display: block;
+                        }
+                    }
 
+                }
             }
         }
     }
