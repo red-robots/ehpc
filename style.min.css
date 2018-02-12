@@ -1365,7 +1365,7 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-.cap{max-width:1500px;margin:0 auto;padding-left:20px !important;padding-right:20px !important}
+.cap{margin:0;padding-left:20px !important;padding-right:20px !important}
 @media screen and (min-width:600px){.cap{padding-left:3.5% !important;padding-right:3.5% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:14px;color:#404040}
