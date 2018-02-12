@@ -80,6 +80,7 @@
                 list-style-type: none;
                 position: relative;
                 width: 100%;
+                z-index: 1;
                 .red-box {
                     width: 20%;
                     top: 0;
@@ -363,6 +364,7 @@
     >.row-4 {
         position: relative;
         width: 100%;
+        z-index: 1;
         .red-box {
             width: 20%;
             top: 0;

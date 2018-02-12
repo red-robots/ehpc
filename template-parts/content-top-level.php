@@ -21,12 +21,6 @@
                     $row_1_button_text_red = $row["row_1_button_text_red"];
                     $row_1_copy = $row["row_1_copy"];?>
                     <li class="slide">
-                        <div class="red-box">
-                        </div><!--.red-box-->
-                        <div class="image" <?php if($row_1_image) echo 'style="background-image: url('.$row_1_image['url'].');"';?>>
-                            <div class="overlay">
-                            </div><!--.overlay-->
-                        </div><!--.image-->
                         <div class="wrapper cap">
                             <div class="wrapper">
                                 <header><h1><?php the_title();?></h1></header>
@@ -47,6 +41,12 @@
                                 <?php endif;?>
                             </div><!--.wrapper-->
                         </div><!--.wrapper.cap-->
+                        <div class="red-box">
+                        </div><!--.red-box-->
+                        <div class="image" <?php if($row_1_image) echo 'style="background-image: url('.$row_1_image['url'].');"';?>>
+                            <div class="overlay">
+                            </div><!--.overlay-->
+                        </div><!--.image-->
                     </li>
                 <?php endforeach;?>
             </ul>
@@ -248,13 +248,6 @@
         </div><!--.wrapper.cap-->
     </section><!--.row-3-->
     <section class="row-4">
-        <div class="red-box">
-        </div><!--.red-box-->
-        <?php $row_4_image = get_field("row_4_image");?>
-        <div class="image" <?php if($row_4_image) echo 'style="background-image: url('.$row_4_image['url'].');"';?>>
-            <div class="overlay">
-            </div><!--.overlay-->
-        </div><!--.image-->
         <div class="wrapper cap">
             <div class="wrapper">
                 <?php $row_4_title = get_field("row_4_title");
@@ -282,6 +275,13 @@
                 <?php endif;?>
             </div><!--.wrapper-->
         </div><!--.wrapper.cap-->
+        <div class="red-box">
+        </div><!--.red-box-->
+        <?php $row_4_image = get_field("row_4_image");?>
+        <div class="image" <?php if($row_4_image) echo 'style="background-image: url('.$row_4_image['url'].');"';?>>
+            <div class="overlay">
+            </div><!--.overlay-->
+        </div><!--.image-->
     </section><!--.row-4-->
     <section class="row-5">
         <div class="wrapper cap">
