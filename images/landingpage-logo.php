@@ -24,7 +24,6 @@
 		<path class="st1" d="M173.11,531.16c143,142.83,368.28-36.71,257.64-207.38L320.29,434.26c-67.15,67.14-176.92,67.14-243.9,0l96.72,96.9Z" transform="translate(-7.48 -6.97)"/>
 		<text class="hpp" x="0" y="15" fill="white">
 			<tspan x="170" y="510">HEALTHCARE PREPAREDNESS</tspan>
-			<tspan x="190" y="530">PROGRAM</tspan>
 		</text>
 	</a>
 </g>
