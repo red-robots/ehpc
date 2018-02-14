@@ -14,14 +14,17 @@
                 display: block;
                 width: 100%;
                 overflow: visible;
+                cursor: pointer;
                 .n-one {
                     text {
                         display: none;
                     }
                     &:hover {
-                        transform: translateX(-30%) translateY(-8%) scale(1.3);
-                        transition: 1s all;
-                        box-shadow: 0 0 5px black;
+                        @media screen and (min-width: $tabwidth){
+                            transform: translateX(-30%) translateY(-8%) scale(1.3);
+                            transition: 1s all;
+                            box-shadow: 0 0 5px black;
+                        }
                         text {
                             display: block;
                         }
@@ -33,34 +36,41 @@
                         display: none;
                     }
                     &:hover {
-                        transform: translateX(-7%) translateY(2%) scale(1.3);
-                        transition: 1s all;
+                        @media screen and (min-width: $tabwidth){
+                            transform: translateX(-7%) translateY(2%) scale(1.3);
+                            box-shadow: 0 0 5px black;
+                            transition: 1s all;
+                        }
                         text {
                             display: block;
                         }
                     }
-
                 }
                 .n-three {
                     text {
                         display: none;
                     }
                     &:hover {
-                        transform: translateX(2%) translateY(-22%) scale(1.3);
-                        transition: 1s all;
+                        @media screen and (min-width: $tabwidth){
+                            transform: translateX(2%) translateY(-22%) scale(1.3);
+                            box-shadow: 0 0 5px black;
+                            transition: 1s all;
+                        }
                         text {
                             display: block;
                         }
                     }
-
                 }
                 .n-four {
                     text {
                         display: none;
                     }
                     &:hover {
-                        transform: translateX(-21%) translateY(-30%) scale(1.3);
-                        transition: 1s all;
+                        @media screen and (min-width: $tabwidth){
+                            transform: translateX(-21%) translateY(-30%) scale(1.3);
+                            box-shadow: 0 0 5px black;
+                            transition: 1s all;
+                        }
                         text {
                             display: block;
                         }
@@ -183,7 +193,7 @@
             }
             >.col-1 {
                 @media screen and (min-width: $tabwidth){
-                    width: 40%;
+                    width: 60%;
                 }
                 header {
                     h2 {
@@ -210,7 +220,7 @@
                 margin: 20px 0 0 0;
                 text-align: center;
                 @media screen and (min-width: $tabwidth){
-                    width: 60%;
+                    width: 40%;
                     margin: 0;
                 }
                 button {
@@ -234,6 +244,10 @@
                         color: $color__ehpc-red;
                         @media screen and (min-width: $tabwidth){
                             font-size: 20px;
+                            padding: 15px 20px;
+                        }
+                        @media screen and (min-width: $midwidth){
+                            padding: 15px 40px;
                         }
                     }
                 }
