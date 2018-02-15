@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
 		controlNav: false,
 		prevText: '<i class="fa fa-chevron-circle-left"></i>',
 		nextText: '<i class="fa fa-chevron-circle-right"></i>',
+		smoothHeight: true,
 	}); // end register flexslider
 	
 	/*
