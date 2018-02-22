@@ -30,14 +30,14 @@
                                     </div><!--.copy-->
                                 <?php endif;
                                 if($row_1_button_link&&$row_1_button_text):?>
-                                    <button>
+                                    <div class="button">
                                         <a href="<?php echo $row_1_button_link;?>">
                                             <?php echo $row_1_button_text;?>
                                             <?php if($row_1_button_text_red):
                                                 echo '&nbsp;<span class="red">'.$row_1_button_text_red.'</span>';
                                             endif;?>
                                         </a>
-                                    </button>
+                                    </div>
                                 <?php endif;?>
                             </div><!--.wrapper-->
                         </div><!--.wrapper.cap-->
@@ -70,11 +70,11 @@
                 <?php $row_2_button_text = get_field("row_2_button_text");
                 $row_2_button_link = get_field("row_2_button_link");
                 if($row_2_button_link&&$row_2_button_text):?>
-                    <button>
+                    <div class="button">
                         <a href="<?php echo $row_2_button_link;?>">
                             <?php echo $row_2_button_text;?>
                         </a>
-                    </button>
+                    </div>
                 <?php endif;?>
             </div><!--.col-2-->
         </div><!--.wrapper.cap-->
@@ -161,11 +161,11 @@
                     endif;
                 endif;?>
                 <?php if($news_button_link&&$news_button_text):?>
-                    <button>
+                    <div class="button">
                         <a href="<?php echo $news_button_link;?>">
                             <?php echo $news_button_text;?>
                         </a>
-                    </button>
+                    </div>
                 <?php endif;?>
             </div><!--.col-->
             <div class="col">
@@ -238,11 +238,11 @@
                     endif;
                 endif;?>
                 <?php if($events_button_link&&$events_button_text):?>
-                    <button>
+                    <div class="button">
                         <a href="<?php echo $events_button_link;?>">
                             <?php echo $events_button_text;?>
                         </a>
-                    </button>
+                    </div>
                 <?php endif;?>
             </div><!--.col-->
         </div><!--.wrapper.cap-->
@@ -264,14 +264,14 @@
                     </div><!--.copy-->
                 <?php endif;
                 if($row_4_button_link&&$row_4_button_text):?>
-                    <button>
+                    <div class="button">
                         <a href="<?php echo $row_4_button_link;?>">
                             <?php echo $row_4_button_text;?>
                             <?php if($row_4_button_text_red):
                                 echo '&nbsp;<span class="red">'.$row_4_button_text_red.'</span>';
                             endif;?>
                         </a>
-                    </button>
+                    </div>
                 <?php endif;?>
             </div><!--.wrapper-->
         </div><!--.wrapper.cap-->
@@ -298,11 +298,11 @@
                 </div><!--.copy-->
             <?php endif;
             if($row_5_button_link&&$row_5_button_text):?>
-                <button>
+                <div class="button">
                     <a href="<?php echo $row_5_button_link;?>">
                         <?php echo $row_5_button_text;?>
                     </a>
-                </button>
+                </div>
             <?php endif;?>
         </div><!--.wrapper.cap-->
     </section><!--.row-5-->
@@ -323,11 +323,11 @@
                         </div><!--.copy-->
                     <?php endif;
                     if($button_link&&$button_text):?>
-                        <button>
+                        <div class="button">
                             <a href="<?php echo $button_link;?>">
                                 <?php echo $button_text;?>
                             </a>
-                        </button>
+                        </div>
                     <?php endif;?>
                 </div><!--.col-->
             <?php endfor;?>

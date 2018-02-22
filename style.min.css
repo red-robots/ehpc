@@ -1486,11 +1486,11 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper header h1{font-size:45px}
 }.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .copy{margin:15px 0 0 0;color:white;font-size:16px}
 @media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .copy{font-size:20px}
-}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper button{margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
-@media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper button{margin:13% 0 0 0}
-}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#333}
-@media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper button a{font-size:20px}
-}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper button a .red{color:#e2231a}
+}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .button{display:inline-block;margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
+@media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .button{margin:13% 0 0 0}
+}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#333}
+@media screen and (min-width:600px){.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .button a{font-size:20px}
+}.template-top-level>.row-1 ul li.slide>.wrapper.cap>.wrapper .button a .red{color:#e2231a}
 .template-top-level>.row-2{background-color:#8a0600}
 .template-top-level>.row-2>.wrapper.cap{padding:20px 0}
 @media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap{padding:2.5% 0 4% 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center}
@@ -1501,11 +1501,11 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-1 .copy{font-size:20px}
 }.template-top-level>.row-2>.wrapper.cap>.col-2{margin:20px 0 0 0;text-align:center}
 @media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-2{width:40%;margin:0}
-}.template-top-level>.row-2>.wrapper.cap>.col-2 button{margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white;display:inline-block}
-@media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-2 button{margin:0 30px}
-}.template-top-level>.row-2>.wrapper.cap>.col-2 button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
-@media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-2 button a{font-size:20px;padding:15px 20px}
-}@media screen and (min-width:900px){.template-top-level>.row-2>.wrapper.cap>.col-2 button a{padding:15px 40px}
+}.template-top-level>.row-2>.wrapper.cap>.col-2 .button{margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white;display:inline-block}
+@media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-2 .button{margin:0 30px}
+}.template-top-level>.row-2>.wrapper.cap>.col-2 .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
+@media screen and (min-width:600px){.template-top-level>.row-2>.wrapper.cap>.col-2 .button a{font-size:20px;padding:15px 20px}
+}@media screen and (min-width:900px){.template-top-level>.row-2>.wrapper.cap>.col-2 .button a{padding:15px 40px}
 }.template-top-level>.row-3{background-color:#efefef}
 .template-top-level>.row-3>.wrapper.cap{padding:20px 0 40px 0}
 @media screen and (min-width:600px){.template-top-level>.row-3>.wrapper.cap{padding:5.5% 0 8% 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}
@@ -1529,9 +1529,9 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-top-level>.row-3>.wrapper.cap .col>.wrapper>.news-event>.col-2>.row-2 a{font-size:20px}
 }.template-top-level>.row-3>.wrapper.cap .col>.wrapper>.news-event>.col-2>.row-2 a i{font-size:14px;line-height:1}
 @media screen and (min-width:600px){.template-top-level>.row-3>.wrapper.cap .col>.wrapper>.news-event>.col-2>.row-2 a i{font-size:18px}
-}.template-top-level>.row-3>.wrapper.cap .col button{margin:auto 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;display:inline-block;background-color:white}
-.template-top-level>.row-3>.wrapper.cap .col button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
-@media screen and (min-width:600px){.template-top-level>.row-3>.wrapper.cap .col button a{font-size:20px}
+}.template-top-level>.row-3>.wrapper.cap .col .button{margin:auto 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;display:inline-block;background-color:white}
+.template-top-level>.row-3>.wrapper.cap .col .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
+@media screen and (min-width:600px){.template-top-level>.row-3>.wrapper.cap .col .button a{font-size:20px}
 }.template-top-level>.row-4{position:relative;width:100%;z-index:1}
 .template-top-level>.row-4 .red-box{width:20%;top:0;left:0;background-color:#e2231a;position:absolute;height:100%;z-index:-1}
 .template-top-level>.row-4 .image{background-position:center;background-size:cover;width:80%;position:absolute;top:0;left:20%;height:100%;z-index:-2}
@@ -1544,11 +1544,11 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper .copy{font-size:20px;margin:8% 0 0 0}
 }.template-top-level>.row-4>.wrapper.cap>.wrapper .copy h3{color:white;margin:0;font-style:italic}
 .template-top-level>.row-4>.wrapper.cap>.wrapper .copy p{margin:0}
-.template-top-level>.row-4>.wrapper.cap>.wrapper button{margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
-@media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper button{margin:8% 0 0 0}
-}.template-top-level>.row-4>.wrapper.cap>.wrapper button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#333}
-@media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper button a{font-size:20px}
-}.template-top-level>.row-4>.wrapper.cap>.wrapper button a .red{color:#e2231a}
+.template-top-level>.row-4>.wrapper.cap>.wrapper .button{display:inline-block;margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
+@media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper .button{margin:8% 0 0 0}
+}.template-top-level>.row-4>.wrapper.cap>.wrapper .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#333}
+@media screen and (min-width:600px){.template-top-level>.row-4>.wrapper.cap>.wrapper .button a{font-size:20px}
+}.template-top-level>.row-4>.wrapper.cap>.wrapper .button a .red{color:#e2231a}
 .template-top-level>.row-5{background-color:#8a0600}
 .template-top-level>.row-5>.wrapper.cap{padding:20px 0 40px 0;text-align:center}
 @media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap{padding:3.5% 0 5.5% 0}
@@ -1557,10 +1557,10 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap header h2{font-size:45px}
 }.template-top-level>.row-5>.wrapper.cap .copy{margin:20px 0 0 0;color:white;font-size:16px}
 @media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap .copy{font-size:20px;margin:3% auto 0 auto;max-width:80%}
-}.template-top-level>.row-5>.wrapper.cap button{margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
-@media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap button{margin:4% 0 0 0}
-}.template-top-level>.row-5>.wrapper.cap button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
-@media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap button a{font-size:20px}
+}.template-top-level>.row-5>.wrapper.cap .button{display:inline-block;margin:20px 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;background-color:white}
+@media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap .button{margin:4% 0 0 0}
+}.template-top-level>.row-5>.wrapper.cap .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
+@media screen and (min-width:600px){.template-top-level>.row-5>.wrapper.cap .button a{font-size:20px}
 }.template-top-level>.row-6>.wrapper.cap{padding:20px 0 40px 0}
 @media screen and (min-width:600px){.template-top-level>.row-6>.wrapper.cap{padding:6% 0 9% 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch}
 }.template-top-level>.row-6>.wrapper.cap .col{margin:20px 0 0 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -1569,9 +1569,9 @@ html[xmlns] .flexslider .slides{display:block}
 .template-top-level>.row-6>.wrapper.cap .col img{width:100%;display:block}
 .template-top-level>.row-6>.wrapper.cap .col .copy{width:100%;margin:20px 0 40px 0;color:#014e54;font-size:16px;text-align:center;padding:0 10px}
 @media screen and (min-width:600px){.template-top-level>.row-6>.wrapper.cap .col .copy{font-size:20px}
-}.template-top-level>.row-6>.wrapper.cap .col button{margin:auto 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;display:inline-block;background-color:white}
-.template-top-level>.row-6>.wrapper.cap .col button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
-@media screen and (min-width:600px){.template-top-level>.row-6>.wrapper.cap .col button a{font-size:20px}
+}.template-top-level>.row-6>.wrapper.cap .col .button{margin:auto 0 0 0;border:3px solid #333;border-radius:900px;box-shadow:none;text-shadow:none;display:inline-block;background-color:white}
+.template-top-level>.row-6>.wrapper.cap .col .button a{padding:15px 40px;font-size:16px;display:block;text-transform:uppercase;text-decoration:none;font-weight:700;color:#e2231a}
+@media screen and (min-width:600px){.template-top-level>.row-6>.wrapper.cap .col .button a{font-size:20px}
 }.template-news-events>.wrapper.cap{padding:20px 0}
 @media screen and (min-width:600px){.template-news-events>.wrapper.cap{padding:4% 0}
 }.template-news-events>.wrapper.cap>header h1{margin:0;font-size:25px;text-transform:uppercase}
